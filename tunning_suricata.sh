@@ -3,7 +3,7 @@
 # Licensed under GPLv2
 # Copyright cbk914@riseup.net 2018
 echo "[*] Network Interfaces Status:"
-NETSTATUS="ip -o link show|awk '{print $2,$9}'"
+NETSTATUS=`ip -o link show|awk '{print $2,$9}'`
 echo $NETSTATUS
 INTERFACE=`nmcli --terse --fields DEVICE dev status| awk '{print $1}'`
 # Number of packets to process simultaneously
