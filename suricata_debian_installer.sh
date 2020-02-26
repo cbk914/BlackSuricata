@@ -21,4 +21,4 @@ echo "[*] Latest adjustments..."
 # Disable LRO/GRO
 ethtool -K $interface gro off lro off
 
-/usr/local/bin/suricata -c /usr/local/etc/suricata//suricata.yaml -i $interface --
+/usr/local/bin/suricata -c /usr/local/etc/suricata/suricata.yaml -i $interface --
